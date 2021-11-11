@@ -1,0 +1,19 @@
+{
+  "name": "sprawozdanie1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serwer.js",
+  "scripts": {
+    "start": "serwer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Adrian Szafrański",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "node-iplocate": "^1.0.2",
+    "public-ip": "^4.0.4",
+    "http": "^0.0.1-security"
+  }
+}
