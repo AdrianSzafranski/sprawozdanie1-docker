@@ -5,7 +5,8 @@ import http from 'http';
 
 //pozostawienie w logach informacji o dacie uruchomienia, autorze 
 //oraz porcie TCP, na którym serwer nasłuchuje na zgłoszenia klienta
-console.log("Data uruchomienia: " + new Date().toLocaleString('pl-PL'));
+const DATA = new Date();
+console.log(`Data uruchomienia: ${DATA.getDate()}.${DATA.getMonth()+1}.${DATA.getFullYear()}`);
 console.log("Autor serwera: Adrian Szafrański");
 console.log("port TCP: 8080");
 
@@ -23,7 +24,7 @@ http.createServer(async function (req, res) {
 
         //zawarcie daty i godziny strefy czasowej klienta w odpowiedzi
         res.write("Data i godzina w strefie czasowej klienta: " +
-        new Date().toLocaleString('pl-PL', results.time_zone));
+        new Date().toLocaleString('pl-PL', {timeZone: results.time_zone}));
     });
 
     //zakończenie odpowiedzi
