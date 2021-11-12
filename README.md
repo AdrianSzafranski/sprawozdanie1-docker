@@ -14,6 +14,9 @@ c. Sposób uzyskania informacji, które wygenerował serwer w trakcie uruchamian
 d. Sprawdzenie, ile warstw posiada zbudowany obraz:<br />
 ```docker image inspect local/sprawozdanie1 | jq '.[].RootFS.Layers'```
 
+Zrzut ekranu okna przeglądarki, potwierdzający poprawne działanie systemu:
+![potwierdzenie, że działa](https://github.com/AdrianSzafranski/chmurki/blob/main/chmurki_dziala.png)
+
 **Podpunkt 4.**
 
 Tak, można zbudować obraz wykorzystując bezpośredni link do Dockerfile umieszczonego na Github oraz przenieść stworzony obraz na swoje konto DockerHub.<br />
