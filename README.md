@@ -6,7 +6,7 @@ a. Zbudowanie opracowanego obrazu kontenera:<br />
 ```docker build -t local/sprawozdanie1 .```
 
 b. Uruchomienie kontenera na podstawie zbudowanego obrazu:<br />
-```docker run -it --rm --name spr1 -p 5100:8080 local/sprawozdanie1```
+```docker run -d --rm --name spr1 -p 5100:8080 local/sprawozdanie1```
 
 c. Sposób uzyskania informacji, które wygenerował serwer w trakcie uruchamiania kontenera:<br />
 ```docker logs spr1```
