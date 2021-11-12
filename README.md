@@ -51,7 +51,7 @@ Uzupełnienie rozwiązania z punktu 1 części dodatkowej zadania 1 o możliwoś
 ```mkdir -p certs```
 - Skopiowanie plików domain.crt i domain.key z urzędu certyfikacji do katalogu certs.
 - Zatrzymanie rejestru, jeżeli jest aktualnie uruchomiony:<br />
-```docker container stop registry```
+```docker container stop myregistry```
 - Stworzenie katalogu przechowującego plik z hasłem:<br />
 ```mkdir auth```
 - Stworzenie pliku z hasłem dla użytkownika ```testuser```, z hasłem ```testpassword```:<br />
