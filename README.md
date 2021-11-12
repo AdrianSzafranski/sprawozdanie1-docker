@@ -3,7 +3,7 @@
 **Podpunkt 3.**
 
 a. Zbudowanie opracowanego obrazu kontenera:<br />
-```docker build -t local/sprawozdanie1```
+```docker build -t local/sprawozdanie1 .```
 
 b. Uruchomienie kontenera na podstawie zbudowanego obrazu:<br />
 ```docker run -it --rm --name spr1 -p 5100:8080 local/sprawozdanie1```
