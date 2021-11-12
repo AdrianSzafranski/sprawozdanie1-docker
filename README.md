@@ -15,7 +15,7 @@ d. Sprawdzenie, ile warstw posiada zbudowany obraz:<br />
 ```docker image inspect local/sprawozdanie1 | jq '.[].RootFS.Layers'```
 
 Zrzut ekranu okna przeglądarki, potwierdzający poprawne działanie systemu:
-![potwierdzenie, że działa](https://github.com/AdrianSzafranski/chmurki/blob/main/chmurki_dziala.png)
+![zrzut okna przeglądarki](https://github.com/AdrianSzafranski/chmurki/blob/main/chmurki_dziala.png)
 
 **Podpunkt 4.**
 
